@@ -1,0 +1,88 @@
+body, html {
+    /* height: 100%; */
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Set your desired background color */
+}
+
+#main {
+text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
+#massage-signout {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#message {
+    display: none;
+}
+
+#logout {
+    display: none;
+}
+
+#sign {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#head{
+    font-size: 18px;
+    outline: 0px!important;
+    text-align: left;
+    line-height: normal;
+    font-family: apercu;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#msg{
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 20px;
+    letter-spacing: -.12px;
+    font-family: Benton Mod Text Rom;
+    line-height: normal;
+}
+
+#login_email{
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: apercu;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: -.11px;
+    border: solid 1px #000000;
+    border-radius: 28.5px;
+    padding: 12px;
+}
+
+#login_password{
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: apercu;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: -.11px;
+    border: solid 1px #000000;
+    border-radius: 28.5px;
+    padding: 12px;
+}
+#login{
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: apercu;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: -.11px;
+    border: solid 1px #000000;
+    border-radius: 28.5px;
+    padding: 12px;
+    text-align: center;
+}
+/* Add more of your existing CSS styles here */
