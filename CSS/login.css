@@ -1,18 +1,12 @@
-body, html {
-    /* height: 100%; */
+.main {
+    
     margin: 30px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: #f0f0f0; /* Set your desired background color */
+
 }
 
-#main {
-text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
-}
 
 #massage-signout {
     text-align: right;
@@ -27,13 +21,9 @@ text-align: center;
     display: none;
 }
 
-#sign {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+
 #head{
-    font-size: 18px;
+    font-size: 24px;
     outline: 0px!important;
     text-align: left;
     line-height: normal;
@@ -52,7 +42,7 @@ text-align: center;
 
 #login_email{
     margin-bottom: 10px;
-    width: 100%;
+    width: 500px;
     font-family: apercu;
     color: #000;
     font-size: 15px;
@@ -64,7 +54,7 @@ text-align: center;
 
 #login_password{
     margin-bottom: 10px;
-    width: 100%;
+    width: 500px;
     font-family: apercu;
     color: #000;
     font-size: 15px;
@@ -75,14 +65,47 @@ text-align: center;
 }
 #login{
     margin-bottom: 10px;
-    width: 100%;
+    margin-top: 15px;
+    width: 523px;
     font-family: apercu;
-    color: #000;
+    color: aliceblue;
+    background-color: #000000;
     font-size: 15px;
     letter-spacing: -.11px;
     border: solid 1px #000000;
     border-radius: 28.5px;
     padding: 12px;
     text-align: center;
+}
+#heads{
+    text-align: left;
+    margin-left: -290px;
+    margin-bottom: -15px;
+}
+.logo-container > img{
+    margin: 25px;
+
+}
+#forget{
+text-align: left;
+margin-left: -250px;
+margin-bottom: -80px;
+color: #373636;
+}
+
+#subs{
+    text-align: left;
+margin-left: -249px;
+color: #373636;
+}
+#logups{
+    margin-top: 40px;
+}
+#logup{
+    color: rgb(27, 33, 18);
+}
+
+#sub{
+    /* margin-top: 15px; */
 }
 /* Add more of your existing CSS styles here */
