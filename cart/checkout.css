@@ -1,0 +1,125 @@
+#container{
+border:1px solid gray;
+background-color: rgb(248, 243, 243);
+
+}
+#navbar
+{
+    border:1px solid gray;
+    height:8vh;
+    display:flex;
+}
+#drop
+{
+    border:1px solid gray;
+    width:40%;
+   
+}
+
+#drop div{
+   
+    width:8%;
+    margin-left:5px;
+  
+
+}
+#drop div div{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    
+   
+}
+#checkout a{
+   text-decoration: none;
+   color: white;
+}
+#des
+{
+
+ border:1px solid gray;
+ width:60%;
+ display:flex;
+ justify-content: space-between;
+ 
+}
+ 
+.close:hover{
+    cursor: pointer;
+}
+#mid
+{
+   display:flex;
+}
+
+
+#portion
+{
+    border:1px solid gray;
+   
+    width:40%;
+    height:80vh;
+
+
+}
+#portion h1{
+    margin: auto;
+  width: 50%;
+padding-top: 250px;
+  
+}
+#portion h3{
+  margin-left: 150px;
+}
+#cart
+{
+    border:1px solid gray;
+    width:60%;
+    height:80vh;
+    display:flex;
+    display: flex;
+    justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#checkout
+{
+    background-color:#f08a74;
+    
+    height:30px;
+    width:15%;
+   
+}
+
+
+
+
+.bottom_section{
+    display: flex;
+    position: relative;
+    
+    bottom: 0;
+   
+   
+  
+   
+   
+}
+
+.bottom_section div {
+   margin-left: 8%;
+   margin-right: 40px;
+   margin-top: 30px;
+}
+.bottom_section div h2{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 20%;
+}
+
+.bottom_section div p{
+    margin-top: -3%;
+    font-size: large;
+    color: black;
+
+}
