@@ -1,0 +1,520 @@
+{
+    "skinCare": [
+        {
+            "id": 1,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/SPF30_bottle_FaceCream_grey-background.psd_300x300.jpg?v=1690968546",
+            "title": "Face Cream SPF 30",
+            "price": "19,90"
+        },
+        {
+            "id": 2,
+            "image": "//haanready.com/cdn/shop/products/01_8.png?v=1675872879",
+            "title": "Full Skin Care Routine - for Normal to Combination Skin",
+            "price": "46,70"
+        },
+        {
+            "id": 3,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/01_1_9865fd8c-29ab-429e-a853-84d38d41e4db_300x300.jpg?v=1681295401",
+            "title": "Hyaluronic Face Cleanser - for Normal to Combination Skin",
+            "price": "12,90 "
+        },
+        {
+            "id": 4,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/WEB_FACECLEANSER_REFILL_HYALURONIC_1copia_300x300.jpg?v=1675943950",
+            "title": "Hyaluronic Face Cleanser Refill",
+            "price": "9,90"
+        },
+        {
+            "id": 5,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Normalrefill_540x.jpg?v=1664960629",
+            "title": "Hyaluronic Face Cleanser + Refill",
+            "price": "16,90"
+        },
+        {
+            "id": 6,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/REFILLNORMAL_300x300.png?v=1681296251",
+            "title": "Hyaluronic Face Serum Refill",
+            "price": "19,90"
+        },
+        {
+            "id": 7,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/05_300x300.png?v=1667473914",
+            "title": "Hyaluronic Face Serum + Refill",
+            "price": "29,70"
+        },
+        {
+            "id": 8,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/01_4_300x300.jpg?v=1675871970",
+            "title": "Hyaluronic Face Cream - for Normal to Combination Skin",
+            "price": "24,90"
+        },
+        {
+            "id": 9,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Normalrefill_300x300.jpg?v=1664960629",
+            "title": "Hyaluronic Face Cream Refill",
+            "price": "19,90"
+        },
+        {
+            "id": 10,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/03_300x300.png?v=1665399777",
+            "title": "Hyaluronic Face Cream + Refill",
+            "price": "33,90"
+        },
+        {
+            "id": 11,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/01_9_300x300.png?v=1675872936",
+            "title": "Full Skin Care Routine - for Oily Skin",
+            "price": "46,70"
+        },
+        {
+            "id": 12,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/2_OILY_CLEANSERcopia_d86cbe92-518c-4d84-b799-8a71a73b27c3_300x300.jpg?v=1686048753",
+            "title": "Niacinamide Face Cleanser – for Oily Skin",
+            "price": "12,90"
+        },
+        {
+            "id": 13,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/2_OILY_CLEANSERcopia_d86cbe92-518c-4d84-b799-8a71a73b27c3_300x300.jpg?v=1686048753",
+            "title": "Niacinamide Face Cleanser – for Oily Skin",
+            "price": "12,90"
+        },
+        {
+            "id": 14,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/WEB_FACECLEANSER_REFILL_NIACINAMIDE_1copia_300x300.jpg?v=1675943894",
+            "title": "Niacinamide Face Cleanser Refill",
+            "price": "9,90"
+        },
+        {
+            "id": 15,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/niacinamiderefill_300x300.jpg?v=1664960641",
+            "title": "Niacinamide Face Cleanser + Refill",
+            "price": "16,90"
+        },
+        {
+            "id": 16,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/01_6_300x300.png?v=1681295880",
+            "title": "Niacinamide Face Serum – for Oily Skin",
+            "price": "24,90"
+        },
+        {
+            "id": 17,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/REFILLGRASA_300x300.png?v=1681296243",
+            "title": "Niacinamide Face Serum Refill",
+            "price": "19,90"
+        },
+        {
+            "id": 18,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/04_300x300.png?v=1667473926",
+            "title": "Niacinamide Face Serum + Refill",
+            "price": "29,70"
+        },
+        {
+            "id": 19,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/01_3_300x300.jpg?v=1675871835",
+            "title": "Niacinamide Face Cream - for Oily Skin",
+            "price": "19,90"
+        },
+        {
+            "id": 20,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/WEB_REFILL_NIACINAMIDE_FACECREAM_1_300x300.jpg?v=1675944103",
+            "title": "Niacinamide Face Cream Refill",
+            "price": "24,90"
+        },
+        {
+            "id": 21,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/01_300x300.png?v=1665399794",
+            "title": "Niacinamide Face Cream + Refill",
+            "price": "33,90"
+        },
+        {
+            "id": 22,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/01_10_300x300.png?v=1675873019",
+            "title": "Full Skin Care Routine - for Dry Skin",
+            "price": "46,70"
+        },
+        {
+            "id": 23,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/01_7_300x300.png?v=1681294763",
+            "title": "Peptide Face Cleanser – for Dry Skin",
+            "price": "12,90"
+        },
+        {
+            "id": 24,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/WEB_FACECLEANSER_REFILL_PEPTIDE_1copia_300x300.jpg?v=1675944015",
+            "title": "Peptide Face Cleanser Refill",
+            "price": "9,90"
+        },
+        {
+            "id": 25,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/peptiderefill_300x300.jpg?v=1664960654",
+            "title": "Peptide Face Cleanser + Refill",
+            "price": "16,90"
+        }
+    ],
+    "handCare": [
+        {
+            "id": 1,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Pocket_SA_MF_ForestGrace_540x.jpg?v=1678356444",
+            "title": "Hand Sanitizer Forest Grace",
+            "price": "5,90"
+        },
+        {
+            "id": 2,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Pocket_SA_MF_TalesLotus_1_540x.jpg?v=1678356415",
+            "title": "Hand Sanitizer Tales of Lotus",
+            "price": "8,90"
+        },
+        {
+            "id": 3,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Pocket_SA_MF_WildOrchid_5052f880-3d50-4442-82d2-e3c4eebc8159_540x.jpg?v=1678356511",
+            "title": "Hand Sanitizer Wild Orchid",
+            "price": "5,90"
+        },
+        {
+            "id": 4,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/sanitizer_bottle_Verbena_grey-background_540x.jpg?v=1689688268",
+            "title": "Hand Sanitizer Purifying Verbena",
+            "price": "8,90"
+        },
+        {
+            "id": 5,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/sanitizer_bottle_Camomille_grey-background_540x.jpg?v=1689688549",
+            "title": "Hand Sanitizer Tranquil Camomil",
+            "price": "5,90"
+        },
+        {
+            "id": 6,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/sanitizer_bottle_chrysants_grey-background_540x.jpg?v=1689687834",
+            "title": "Hand Sanitizer Healing Chrysants",
+            "price": "8,90"
+        },
+        {
+            "id": 7,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/ROSE_72d9449f-df23-42f9-acc2-abcd6450628f_540x.jpg?v=1681385658",
+            "title": "Hand Sanitizer Bright Rose",
+            "price": "5,90"
+        },
+        {
+            "id": 8,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/sanitizer_bottle_Lavanda_grey-background_540x.jpg?v=1689688425",
+            "title": "Hand Sanitizer Soothing Lavender",
+            "price": "8,90"
+        },
+        {
+            "id": 9,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/sanitizer_bottle_MorningGlory_grey-background_540x.jpg?v=1690461366",
+            "title": "Hand Sanitizer Morning Glory",
+            "price": "5,90"
+        },
+        {
+            "id": 10,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/sanitizer_bottle_DewOfDawn_grey-background_540x.jpg?v=1690461435",
+            "title": "Hand Sanitizer Dew of Dawn",
+            "price": "8,90"
+        },
+        {
+            "id": 11,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/sanitizer_bottle_SunsetFleur_grey-background_540x.jpg?v=1689688466",
+            "title": "Hand Sanitizer Sunset Fleur",
+            "price": "5,90"
+        },
+        {
+            "id": 12,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/sanitizer_bottle_Citrus_grey-background_540x.jpg?v=1689687026",
+            "title": "Hand Sanitizer Citrus Noon",
+            "price": "8,90"
+        },
+        {
+            "id": 13,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/ROSE_72d9449f-df23-42f9-acc2-abcd6450628f_540x.jpg?v=1681385658",
+            "title": "Hand Sanitizer Manhattan Glacé",
+            "price": "5,90"
+        },
+        {
+            "id": 14,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/sanitizer_bottle_Lavanda_grey-background_540x.jpg?v=1689688425",
+            "title": "Hand Sanitizer Gentle Paloma",
+            "price": "8,90"
+        },
+        {
+            "id": 15,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Pocket_SA_MF_WildOrchid_5052f880-3d50-4442-82d2-e3c4eebc8159_540x.jpg?v=1678356511",
+            "title": "Hand Sanitizer Mojito Splash",
+            "price": "5,90"
+        },
+        {
+            "id": 16,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/sanitizer_bottle_chrysants_grey-background_540x.jpg?v=1689687834",
+            "title": "Hand Sanitizer Margarita Spirit",
+            "price": "8,90"
+        },
+        {
+            "id": 17,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/sanitizer_bottle_Verbena_grey-background_540x.jpg?v=1689688268",
+            "title": "Hand Sanitizer Spicy Ginger Ale",
+            "price": "5,90"
+        },
+        {
+            "id": 18,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/01_10_540x.jpg?v=1675941436",
+            "title": "Hand Cream Coco Cooler",
+            "price": "8,90"
+        },
+        {
+            "id": 19,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/01_9_540x.jpg?v=1677688457",
+            "title": "Hand Cream Forest Grace",
+            "price": "5,90"
+        },
+        {
+            "id": 20,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/01_7_540x.jpg?v=1676300269",
+            "title": "Hand Cream Carrot Kick",
+            "price": "8,90"
+        }
+    ],
+    "bodyCare": [
+        {
+            "id": 1,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/DEO_02_1_300x300.jpg?v=1681296753",
+            "title": "Deodorant Purifying Verbena",
+            "price": "11,80"
+        },
+        {
+            "id": 2,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/DEO_03_300x300.jpg?v=1681296799",
+            "title": "Deodorant Morning Glory",
+            "price": "13,80"
+        },
+        {
+            "id": 3,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/DEO_01_300x300.jpg?v=1681296813",
+            "title": "Deodorant Margarita Spirit",
+            "price": "10,80"
+        },
+        {
+            "id": 4,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/DEO_TL_4719e25c-e624-4914-9ffc-42b42063cdca_300x300.jpg?v=1681722984",
+            "title": "Deodorant Sensitive Tales of Lotus",
+            "price": "13,80"
+        },
+        {
+            "id": 5,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/DEO_FG_300x300.jpg?v=1681722953",
+            "title": "Deodorant Sensitive Forest Grace",
+            "price": "9,80"
+        },
+        {
+            "id": 6,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/DEO_WO_055bfcc7-f403-4896-9054-8ae723b46cea_300x300.jpg?v=1681723001",
+            "title": "Deodorant Sensitive Wild Orchid",
+            "price": "12,80"
+        },
+        {
+            "id": 7,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/BW_01copia_300x300.jpg?v=1677690055",
+            "title": "Body Wash Morning Glory",
+            "price": "15,80"
+        },
+        {
+            "id": 8,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/BW_03copia_300x300.jpg?v=1651511095",
+            "title": "Body Wash Purifying Verbena",
+            "price": "14,80"
+        },
+        {
+            "id": 9,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/BW_02copia_300x300.jpg?v=1676026923",
+            "title": "Body Wash Margarita Spirit",
+            "price": "10,80"
+        },
+        {
+            "id": 10,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/BL_03copia_300x300.jpg?v=1681296471",
+            "title": "Body Lotion Tales of Lotus",
+            "price": "13,80"
+        },
+        {
+            "id": 11,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/BL_02copia_300x300.jpg?v=1676025750",
+            "title": "Body Lotion Forest Grace",
+            "price": "15,80"
+        },
+        {
+            "id": 12,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/BL_01copia_300x300.jpg?v=1685374103",
+            "title": "Body Lotion Wild Orchid",
+            "price": "12,80"
+        },
+        {
+            "id": 13,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/Travel_bottle_BodyWash_grey-background.psd_300x300.webp?v=1691490067",
+            "title": "Travel Forest Grace Body Wash",
+            "price": "14,80"
+        },
+        {
+            "id": 14,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/travel_bottle_bodylotion_grey-background_1180_0bbb5289-504c-4957-98c6-c466d9f27666_300x300.jpg?v=1691490041",
+            "title": "Travel Forest Grace Body Lotion",
+            "price": "15,80"
+        },
+        {
+            "id": 15,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/3Botes_Deo_300x300.jpg?v=1681998357",
+            "title": "Aluminum Free Deodorant Pack",
+            "price": "13,80"
+        },
+        {
+            "id": 16,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/BW_04_300x300.jpg?v=1651511106",
+            "title": "Body Wash Refill Morning Glory",
+            "price": "15,80"
+        },
+        {
+            "id": 17,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/DEO_05_300x300.jpg?v=1651511078",
+            "title": "Deodorant Refill Purifying Verbena",
+            "price": "12,80"
+        },
+        {
+            "id": 18,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/BW_06_300x300.jpg?v=1651511100",
+            "title": "Body Wash Refill Margarita Spirit",
+            "price": "14,80"
+        },
+        {
+            "id": 19,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Deodorant_FAMILY_3bottles_grey_background_300x300.jpg?v=1681722131",
+            "title": "Aluminum Free Sensitive Deodorant Pack",
+            "price": "15,80"
+        },
+        {
+            "id": 20,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/BW_14_300x300.jpg?v=1651511391",
+            "title": "Body Wash + Refill Morning Glory",
+            "price": "12,80"
+        }
+    ],
+    "oralCare": [
+        {
+            "id": 1,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Toothpaste_Fluoride_frontal_x3_5ced6c82-6da2-4cd6-886a-ceb8c4827bc7_300x300.jpg?v=1681998422",
+            "title": "Fluoride Toothpaste Pack",
+            "price": "11,90"
+        },
+        {
+            "id": 2,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Toothpaste_Dolce_Vita_Producto_Refill_25c10242-65b7-4c0e-ba1a-daf31d7ce646_300x300.jpg?v=1654257037",
+            "title": "Toothpaste Fluoride + Refill Dolce Vita",
+            "price": "15,80"
+        },
+        {
+            "id": 3,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Toothpaste_Refills_DolceVita_300x300.jpg?v=1654256956",
+            "title": "Toothpaste Fluoride Refill Dolce Vita",
+            "price": "8,90"
+        },
+        {
+            "id": 4,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Toothpaste_Dolce_Vita_Producto_Refill_300x300.jpg?v=1686557143",
+            "title": "Toothpaste Fluoride + Refill Hyvä Meininki",
+            "price": "15,90"
+        },
+        {
+            "id": 5,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Toothpaste_Dolce_Vita_Producto_Refill_300x300.jpg?v=1686557143",
+            "title": "Toothpaste Fluoride + Refill Good On Ya",
+            "price": "9,80"
+        },
+        {
+            "id": 6,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/files/ToothpasteRefill_WithFluor_HyvaMeininki_300x300.jpg?v=1686558229",
+            "title": "Toothpaste Fluoride Refill Hyvä Meininki",
+            "price": "11,90"
+        },
+        {
+            "id": 7,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Toothpaste_Good_On_Ya_Refill_37932b02-0aec-49c7-8881-32f8a2e38676_300x300.jpg?v=1654256571",
+            "title": "Toothpaste Fluoride Refill Good on Ya",
+            "price": "6,90"
+        },
+        {
+            "id": 8,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Toothpaste_Fluoride_Hyva_2_300x300.jpg?v=1676027007",
+            "title": "Toothpaste Fluoride Hyvä Meininki",
+            "price": "8,90"
+        },
+        {
+            "id": 9,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Toothpaste_Fluoride_Good_On_Ya2_300x300.jpg?v=1677768176",
+            "title": "Toothpaste Fluoride Good on Ya",
+            "price": "15,80"
+        },
+        {
+            "id": 10,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Toothpaste_Fluoride_Dolce_Vita2_300x300.jpg?v=1676027530",
+            "title": "Toothpaste Fluoride Dolce Vita",
+            "price": "12,80"
+        },
+        {
+            "id": 11,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/03_1_300x300.jpg?v=1686560382",
+            "title": "Toothpaste Whitening + Refill Hyva Meininki",
+            "price": "11,90"
+        },
+        {
+            "id": 12,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/02_1_1fcc6bc9-18d6-4d29-a281-a8d4178092d7_300x300.jpg?v=1651511211",
+            "title": "Toothpaste Whitening Refill Hyvä Meininki",
+            "price": "8,90"
+        },
+        {
+            "id": 13,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/01_1_300x300.jpg?v=1686560152",
+            "title": "Toothpaste Whitening Hyvä Meininki",
+            "price": "12,80"
+        },
+        {
+            "id": 14,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/HAAN_JULIO20224386_9b1bb1fd-9cf9-491c-ad2a-02dbeec01fb4_300x300.jpg?v=1685527614",
+            "title": "Toothpaste Apple a Day",
+            "price": "6,90"
+        },
+        {
+            "id": 15,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/HAAN_JULIO20224409_78a8473a-0627-4984-9457-52daa7ec9666_300x300.jpg?v=1651510567",
+            "title": "Toothpaste + Refill LB",
+            "price": "15,80"
+        },
+        {
+            "id": 16,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/HAAN_JULIO20224394_20d7e176-81e4-4c77-81f7-b3836c9c8865_300x300.jpg?v=1677673291",
+            "title": "Toothpaste + Refill GY",
+            "price": "8,90"
+        },
+        {
+            "id": 17,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/HAAN_JULIO20224403_f52ff863-5914-4468-9939-0aec04c75eaa_300x300.jpg?v=1651510546",
+            "title": "Toothpaste + Refill AD",
+            "price": "11,90"
+        },
+        {
+            "id": 18,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/HAAN_JULIO20224362_97c44d95-8d23-4d6a-8054-2705b97f3664_300x300.jpg?v=1651510540",
+            "title": "Toothpaste Refill Good on Ya",
+            "price": "6,90"
+        },
+        {
+            "id": 19,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/HAAN_JULIO20224365_1ae7480b-5e9f-4ab4-b170-dfa7848b92d7_300x300.jpg?v=1651510535",
+            "title": "Toothpaste Refill Life's a Beach",
+            "price": "12,80"
+        },
+        {
+            "id": 20,
+            "image": "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/HAAN_JULIO20224373_300x300.jpg?v=1651510529",
+            "title": "Toothpaste Refill Apple a Day",
+            "price": "15,80"
+        }
+    ]
+}
