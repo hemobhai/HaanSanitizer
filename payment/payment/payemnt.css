@@ -1,0 +1,107 @@
+#container{
+    border:1px solid gray;
+    background-color: rgb(248, 243, 243);
+    
+    }
+    #navbar
+    {
+        height:8vh;
+        display:flex;
+    }
+    #drop
+    {
+        border:1px solid gray;
+        width:40%;
+       
+    }
+    
+    #drop div{
+       
+        width:8%;
+        margin-left:5px;
+      
+    
+    }
+    #drop div div{
+        width: 40px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        
+       
+    }
+    #checkout a{
+       text-decoration: none;
+       color: white;
+    }
+    #des
+    {
+    
+     border:1px solid gray;
+     width:60%;
+     display:flex;
+     justify-content: space-between;
+     
+    }
+     
+    .close:hover{
+        cursor: pointer;
+    }
+    #mid
+    {
+       display:flex;
+    }
+    
+    #small {
+        border:1px solid gray;
+       width:20%;
+        display:flex;
+        justify-content: space-between;
+    }
+    #small img
+    {
+        
+       
+        margin :auto;
+    }
+
+    #portion
+    {
+        border:1px solid gray;
+       
+        width:40%;
+        height:80vh;
+    
+    
+    }
+    #portion h1{
+        margin: auto;
+      width: 50%;
+    padding-top: 250px;
+      
+    }
+    #portion h3{
+      margin-left: 150px;
+    }
+    #cart
+    {
+        border:1px solid gray;
+        width:60%;
+        height:80vh;
+        display:flex;
+        display: flex;
+        justify-content: flex-end;
+      align-items: flex-end;
+    }
+    
+    #checkout
+    {
+        background-color:#f08a74;
+        
+        height:30px;
+        width:15%;
+       
+    }
+    
+    
+    
