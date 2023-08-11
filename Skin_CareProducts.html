@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .title_Euro {
+            text-align: center;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #skinCareImage {
+            /* width: 300px; */
+            /* top: -100px; */
+            /* left: 50%; */
+            /* transform: translateX(-50%); */
+            /* z-index: -1; */
+            width: 100%;
+            height: 440px;
+            /* position: relative; */
+        }
+
+        .imageContainer{
+            position: relative;
+            overflow: hidden;
+        }
+
+        #product_image{
+            /* width: 100%; */
+            /* height: 360px; */
+            width: 290px;
+            height: 300px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #shopingBagDiv{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 65%;
+            left: 86%;
+        }
+        #shoping_bag {
+            width: 25px;
+            height: 25px;
+            opacity: 0;
+        }
+        .imageContainer:hover #shoping_bag{
+            opacity: 1;
+        }
+        #imgPart-1 {
+            position: relative;
+            /* top: 0;
+            left: 0; */
+        }
+
+        #imgPart-2 {
+            position: absolute;
+            top: 17%;
+            left: 10%;
+            color: aliceblue;
+        }
+
+        #imageDownText {
+            margin-top: -10px;
+            display: flex;
+            /* height: 40px; */
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            /* vertical-align: bottom; */
+            background-color: #c1ddc6;
+        }
+
+        .arrow {
+            border: solid black;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 2px;
+        }
+
+        .arrow {
+            /* margin-top: -5px; */
+            margin-bottom: 3px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+
+        #sortBy {
+            display: flex;
+            gap: 7px;
+        }
+
+        #filter_Sorting {
+            /* width: 40px; */
+            margin: 5px 0 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #filterPart {
+            display: flex;
+            gap: 10px;
+        }
+
+        #filterIcon {
+            margin-top: 2px;
+        }
+
+        #mainProductContainer {
+            margin: 0 40px 0 40px;
+        }
+
+        #filterContent {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #filterHumberger {
+            display: flex;
+            display: none;
+        }
+
+        #filterHumberger.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #filterBtnDiv {
+            display: flex;
+            justify-content: center;
+        }
+
+        #filterBtn {
+            width: 8%;
+            border-radius: 10px;
+        }
+
+        #sortHumberger {
+            display: flex;
+            display: none;
+        }
+
+        #sortContent {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #sortHumberger.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #sortBtnDiv {
+            display: flex;
+            justify-content: center;
+        }
+
+        #sortBtn {
+            width: 8%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="nav"></div>
+        <div id="container">
+            <p>Home > Skin Care</p>
+            <div id="mainImage">
+                <!-- <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Freepik - Flaticon</a> -->
+                <div id="imgPart-1">
+                    <img src="//haanready.com/cdn/shop/files/iii.jpg?v=1666004731" id="skinCareImage" alt="">
+                </div>
+                <div id="imgPart-2">
+                    <h2>Skin Care</h2>
+                    <h3>The Ultimate path to radiant skin</h3>
+                </div>
+                <div id="imageDownText">
+                    <p>
+                        Lift Up your Journey: <span>Natural essentials for your daily adventures</span>
+                    </p>
+                </div>
+            </div>
+            <div id="mainProductContainer">
+                <div id="filter_Sorting">
+                    <div id="filterPart">Filter
+                        <div id="filterIcon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.8 3.2H3.348C3.6792 4.1288 4.5584 4.8 5.6 4.8C6.6416 4.8 7.5208 4.1288 7.852 3.2H15.2C15.6424 3.2 16 2.8424 16 2.4C16 1.9576 15.6424 1.6 15.2 1.6H7.852C7.5208 0.6712 6.6416 0 5.6 0C4.5584 0 3.6792 0.6712 3.348 1.6H0.8C0.3576 1.6 0 1.9576 0 2.4C0 2.8424 0.3576 3.2 0.8 3.2ZM15.2 12.8H7.852C7.5208 11.8712 6.6416 11.2 5.6 11.2C4.5584 11.2 3.6792 11.8712 3.348 12.8H0.8C0.3576 12.8 0 13.1576 0 13.6C0 14.0424 0.3576 14.4 0.8 14.4H3.348C3.6792 15.3288 4.5584 16 5.6 16C6.6416 16 7.5208 15.3288 7.852 14.4H15.2C15.6424 14.4 16 14.0424 16 13.6C16 13.1576 15.6424 12.8 15.2 12.8ZM15.2 7.2H12.652C12.3208 6.2712 11.4416 5.6 10.4 5.6C9.3584 5.6 8.4792 6.2712 8.148 7.2H0.8C0.3576 7.2 0 7.5576 0 8C0 8.4424 0.3576 8.8 0.8 8.8H8.148C8.4792 9.7288 9.3584 10.4 10.4 10.4C11.4416 10.4 12.3208 9.7288 12.652 8.8H15.2C15.6424 8.8 16 8.4424 16 8C16 7.5576 15.6424 7.2 15.2 7.2ZM5.6 1.6C6.0416 1.6 6.4 1.9584 6.4 2.4C6.4 2.8416 6.0416 3.2 5.6 3.2C5.1584 3.2 4.8 2.8416 4.8 2.4C4.8 1.9584 5.1584 1.6 5.6 1.6ZM5.6 14.4C5.1584 14.4 4.8 14.0416 4.8 13.6C4.8 13.1584 5.1584 12.8 5.6 12.8C6.0416 12.8 6.4 13.1584 6.4 13.6C6.4 14.0416 6.0416 14.4 5.6 14.4ZM10.4 8.8C9.9584 8.8 9.6 8.4416 9.6 8C9.6 7.5584 9.9584 7.2 10.4 7.2C10.8416 7.2 11.2 7.5584 11.2 8C11.2 8.4416 10.8416 8.8 10.4 8.8Z"
+                                    fill="#222222"></path>
+                                <mask id="mask0_8095:39389" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                    y="0" width="16" height="16">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.8 3.2H3.348C3.6792 4.1288 4.5584 4.8 5.6 4.8C6.6416 4.8 7.5208 4.1288 7.852 3.2H15.2C15.6424 3.2 16 2.8424 16 2.4C16 1.9576 15.6424 1.6 15.2 1.6H7.852C7.5208 0.6712 6.6416 0 5.6 0C4.5584 0 3.6792 0.6712 3.348 1.6H0.8C0.3576 1.6 0 1.9576 0 2.4C0 2.8424 0.3576 3.2 0.8 3.2ZM15.2 12.8H7.852C7.5208 11.8712 6.6416 11.2 5.6 11.2C4.5584 11.2 3.6792 11.8712 3.348 12.8H0.8C0.3576 12.8 0 13.1576 0 13.6C0 14.0424 0.3576 14.4 0.8 14.4H3.348C3.6792 15.3288 4.5584 16 5.6 16C6.6416 16 7.5208 15.3288 7.852 14.4H15.2C15.6424 14.4 16 14.0424 16 13.6C16 13.1576 15.6424 12.8 15.2 12.8ZM15.2 7.2H12.652C12.3208 6.2712 11.4416 5.6 10.4 5.6C9.3584 5.6 8.4792 6.2712 8.148 7.2H0.8C0.3576 7.2 0 7.5576 0 8C0 8.4424 0.3576 8.8 0.8 8.8H8.148C8.4792 9.7288 9.3584 10.4 10.4 10.4C11.4416 10.4 12.3208 9.7288 12.652 8.8H15.2C15.6424 8.8 16 8.4424 16 8C16 7.5576 15.6424 7.2 15.2 7.2ZM5.6 1.6C6.0416 1.6 6.4 1.9584 6.4 2.4C6.4 2.8416 6.0416 3.2 5.6 3.2C5.1584 3.2 4.8 2.8416 4.8 2.4C4.8 1.9584 5.1584 1.6 5.6 1.6ZM5.6 14.4C5.1584 14.4 4.8 14.0416 4.8 13.6C4.8 13.1584 5.1584 12.8 5.6 12.8C6.0416 12.8 6.4 13.1584 6.4 13.6C6.4 14.0416 6.0416 14.4 5.6 14.4ZM10.4 8.8C9.9584 8.8 9.6 8.4416 9.6 8C9.6 7.5584 9.9584 7.2 10.4 7.2C10.8416 7.2 11.2 7.5584 11.2 8C11.2 8.4416 10.8416 8.8 10.4 8.8Z"
+                                        fill="white"></path>
+                                </mask>
+                                <g mask="url(#mask0_8095:39389)"></g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="sortBy">Sort by
+                        <div>
+                            <i class="arrow down"></i>
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                </div>
+                <div id="filterHumberger">
+                    <div id="filterContent">
+                        <div>
+                            Category
+                            <div>
+                                <input type="radio" id="faceCleanser">Face Cleanser (9)
+                            </div>
+                            <div>
+                                <input type="radio" id="faceCream">Face Cream (9)
+                            </div>
+                            <div>
+                                <input type="radio" id="faceSerum">Face Serum (9)
+                            </div>
+                            <div>
+                                <input type="radio" id="faceSPF">Face SPF (1)
+                            </div>
+                            <div>
+                                <input type="radio" id="skinCare">Skin Care (3)
+                            </div>
+                        </div>
+                        <div>Product
+                            <div>
+                                <input type="radio" id="comboPack">Combo (12)
+                            </div>
+                        </div>
+                        <div>Size
+                            <div>
+                                <input type="radio" id="refilPack"> Refil (9)
+                            </div>
+                        </div>
+                        <div>Fragrance
+                            <div>
+                                <input type="radio" id="forestGrace"> Forest Grace (10)
+                            </div>
+                            <div>
+                                <input type="radio" id="morningGlory"> Morning Glory (11)
+                            </div>
+                            <div>
+                                <input type="radio" id="talesOfLotus"> Tales Of Lotus (10)
+                            </div>
+                        </div>
+                        <!-- <div>Price
+                            <div>
+                                €10 - €47
+                            </div>
+                        </div> -->
+                    </div>
+                    <div id="filterBtnDiv">
+                        <button id="filterBtn">Apply Filter</button>
+                    </div>
+                </div>
+                <div id="sortHumberger">
+                    <div id="sortContent">
+                        <div>
+                            Popularity
+                            <div>
+                                <input type="radio" id="relevence">Relevence
+                            </div>
+                            <div>
+                                <input type="radio" id="bestSelling">Bestselling
+                            </div>
+                        </div>
+                        <div>Price
+                            <div>
+                                <input type="radio" id="priceDescending">Price Descending
+                            </div>
+                            <div>
+                                <input type="radio" id="priceAscending">Price Ascending
+                            </div>
+                        </div>
+                        <div>Release Date
+                            <div>
+                                <input type="radio" id="dateDescending"> Created Descending
+                            </div>
+                            <div>
+                                <input type="radio" id="dateAscending"> Created Ascending
+                            </div>
+                        </div>
+                        <div>Fragrance
+                            <div>
+                                <input type="radio" id="aToz"> A - Z
+                            </div>
+                            <div>
+                                <input type="radio" id="zToa"> Z - A
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sortBtnDiv">
+                        <button id="sortBtn">Apply Sort</button>
+                    </div>
+                </div>
+                <div id="products"></div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
+<script>
+    getData();
+    let resData;
+    async function getData() {
+        try {
+            var res = await fetch("https://mushy-sunglasses-lamb.cyclic.app/skinCare")
+            resData = await res.json();
+            showData(resData);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    async function showData(data) {
+        document.getElementById("products").innerHTML = "";
+
+        if (data.length === 0) {
+            var h1 = document.createElement("h1");
+            h1.textContent = "Apologies, but this product is currently out of stock."
+            document.getElementById("products").append(h1);
+        } else {
+
+            data.map((item) => {
+                var div = document.createElement("div");
+                div.setAttribute("class", "card");
+
+                // var icon = document.createElement()
+                var imageContainer = document.createElement("div");
+                div.setAttribute("class", "imageContainer");
+
+                var image = document.createElement("img")
+                image.setAttribute("src", item.image);
+                image.setAttribute("id", "product_image");
+
+                var shopingBagDiv = document.createElement("div");
+                shopingBagDiv.setAttribute("id", "shopingBagDiv")
+
+                var image2 = document.createElement("img")
+                image2.setAttribute("src", "shopping-bag.png");
+                image2.setAttribute("id", "shoping_bag");
+                image2.addEventListener("click", function(){
+                    // var obj = item;
+                    storeData(item)
+                    // image2.style.color = "green";
+                })
+                
+                var p1 = document.createElement("p");
+                p1.textContent = item.title //"Full Skin Care Routine - for Normal to Combination Skin";
+                p1.setAttribute("class", "title_Euro")
+                
+                var p2 = document.createElement("p");
+                p2.textContent = "₹ "+item.price // "46,70 €"
+                p2.setAttribute("class", "title_Euro")
+
+                var a = document.createElement("a");
+
+                
+                shopingBagDiv.append(image2)
+                imageContainer.append(image, shopingBagDiv);
+                a.append(imageContainer)
+                div.append(a, p1, p2)
+                document.getElementById("products").append(div);
+            })
+        }
+    }
+    
+    let arr = [] || JSON.parse(localStorage.getItem('productArr'));
+
+    function storeData(item){
+        console.log(item)
+        arr.push(item);
+        localStorage.setItem('productArr', JSON.stringify(arr));
+    //     console.log("perfectWorking")
+    }
+    const filterDiv = document.getElementById("filterPart");
+    const hiddenFilters = document.getElementById("filterHumberger");
+    filterDiv.addEventListener('click', function () {
+        this.classList.toggle('active');
+        hiddenFilters.classList.toggle('active');
+    });
+
+    const shortingDiv = document.getElementById("sortBy");
+    const hiddenShortings = document.getElementById("sortHumberger");
+    shortingDiv.addEventListener('click', function () {
+        this.classList.toggle('active');
+        hiddenShortings.classList.toggle('active');
+    });
+
+    var radioBtn = document.querySelectorAll('input[type="radio"]');
+    var previousBtn = {};
+
+    radioBtn.forEach(btn => {
+        btn.addEventListener("click", () => {
+            if (previousBtn[btn.id] === btn.checked) {
+                btn.checked = !btn.checked;
+            }
+            previousBtn[btn.id] = btn.checked;
+        })
+    })
+
+    document.getElementById("filterBtn").addEventListener("click", applyFilter);
+    var faceCleanser = document.getElementById("faceCleanser");
+    var faceCream = document.getElementById("faceCream");
+    var faceSerum = document.getElementById("faceSerum");
+    var faceSPF = document.getElementById("faceSPF");
+    var skinCare = document.getElementById("skinCare");
+    var comboPack = document.getElementById("comboPack");
+    var refilPack = document.getElementById("refilPack");
+    var forestGrace = document.getElementById("forestGrace");
+    var morningGlory = document.getElementById("morningGlory");
+    var talesOfLotus = document.getElementById("talesOfLotus");
+    function applyFilter() {
+        let count = 0;
+        if (faceCleanser.checked) {
+            count++;
+            // console.log(resData)
+            var filterData = resData.filter(data => {
+                const regex = /\bface cleanser\b/i;
+                return regex.test(data.title);
+            })
+            showData(filterData);
+            // console.log("cleanser")
+        }
+        if (faceCream.checked) {
+            count++;
+            var filterData = resData.filter(data => {
+                const regex = /\bface cream\b/i;
+                return regex.test(data.title);
+            })
+            showData(filterData);
+            // console.log("cream")
+        }
+        if (faceSerum.checked) {
+            count++;
+            var filterData = resData.filter(data => {
+                const regex = /\bface serum\b/i;
+                return regex.test(data.title);
+            })
+            showData(filterData);
+            // console.log("serum")
+        }
+        if (faceSPF.checked) {
+            count++;
+            var filterData = resData.filter(data => {
+                const regex = /\bface SPF\b/i;
+                return regex.test(data.title);
+            })
+            showData(filterData);
+            // console.log("spf")
+        }
+        if (skinCare.checked) {
+            count++;
+            var filterData = resData.filter(data => {
+                const regex = /\bskin care\b/i;
+                return regex.test(data.title);
+            })
+            showData(filterData);
+            // console.log("Skin Care")
+        }
+
+
+        if (comboPack.checked) {
+            count++;
+            var filterData = resData.filter(data => {
+                const regex = /\bFull\b/i;
+                return regex.test(data.title);
+            })
+            showData(filterData);
+            // console.log("Skin Care")
+        }
+        if (refilPack.checked) {
+            count++;
+            var filterData = resData.filter(data => {
+                const regex = /\brefill\b/i;
+                return regex.test(data.title);
+            })
+            showData(filterData);
+            // console.log("Skin Care")
+        }
+        if (forestGrace.checked) {
+            count++;
+            var filterData = resData.filter(data => {
+                const regex = /\bForest Grace\b/i;
+                return regex.test(data.title);
+            })
+            showData(filterData);
+            // console.log("Skin Care")
+        }
+        if (morningGlory.checked) {
+            count++;
+            var filterData = resData.filter(data => {
+                const regex = /\bMorning Glory\b/i;
+                return regex.test(data.title);
+            })
+            showData(filterData);
+            // console.log("Skin Care")
+        }
+        if (talesOfLotus.checked) {
+            count++;
+            var filterData = resData.filter(data => {
+                const regex = /\bTales Of Lotus\b/i;
+                return regex.test(data.title);
+            })
+            showData(filterData);
+            // console.log("Skin Care")
+        }
+        if (count == 0) {
+            showData(resData);
+        }
+    }
+
+    document.getElementById("sortBtn").addEventListener("click", applySort);
+    var relevence = document.getElementById("relevence");
+    var bestSelling = document.getElementById("bestSelling");
+    var priceAscending = document.getElementById("priceAscending");
+    var priceDescending = document.getElementById("priceDescending");
+    var dateAscending = document.getElementById("dateAscending");
+    var dateDescending = document.getElementById("dateDescending"); 
+
+    function applySort(){
+        let sortCount = 0;
+        if(priceAscending.checked){
+            var sortData = resData.sort((a, b)=>{
+                let priceA = parseFloat(a.price.replace(',','.'));
+                let priceB = parseFloat(b.price.replace(',','.'));
+                return priceA - priceB;
+                // if(pr>1500){
+                //     return pr;
+                // }
+            })
+            showData(sortData)
+            console.log(sortData);
+        }
+        if(priceDescending.checked){
+            var sortData = resData.sort((a, b)=>{
+                let priceA = parseFloat(a.price.replace(',','.'));
+                let priceB = parseFloat(b.price.replace(',','.'));
+                return priceB - priceA;
+                // if(pr>1500){
+                //     return pr;
+                // }
+            })
+            showData(sortData);
+            console.log(sortData);
+        }
+        if(priceAscending.checked){
+            var sortData = resData.sort((a, b)=>{
+                return new Date(b.Date) - new Date(a.Date);
+            })
+            showData(sortData);
+            console.log(sortData);
+        }
+
+    }
+
+
+
+
+
+
+</script>

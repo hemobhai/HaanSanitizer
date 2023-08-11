@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .title_Euro {
+            text-align: center;
+        }
+
+        img {
+            /* width: 300px; */
+            width: 100%;
+            height: 360px;
+        }
+
+        #imgPart-1 {
+            position: relative;
+            /* top: 0;
+            left: 0; */
+        }
+
+        #imgPart-2 {
+            position: absolute;
+            top: 17%;
+            left: 10%;
+            color: aliceblue;
+        }
+
+        #imageDownText{
+            margin-top: -10px;
+            display: flex;
+            /* height: 40px; */
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            /* vertical-align: bottom; */
+            background-color: #c1ddc6;
+        }
+
+        .arrow {
+            border: solid black;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 2px;
+        }
+
+        .arrow {
+            /* margin-top: -5px; */
+            margin-bottom: 3px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+
+        #sortBy {
+            display: flex;
+            gap: 7px;
+        }
+
+        #filter_Sorting {
+            /* width: 40px; */
+            margin: 5px 0 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #filterPart {
+            display: flex;
+            gap: 10px;
+        }
+
+        #filterIcon {
+            margin-top: 2px;
+        }
+
+        #mainProductContainer{
+            margin: 0 20px 0 20px;
+        }
+
+        #filterHumberger{
+            display: flex;
+            display: none;
+        }
+        #filterHumberger.active{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #sortHumberger{
+            display: flex;
+            display: none;
+        }
+        #sortHumberger.active{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="nav"></div>
+        <div id="container">
+            <p>Home > Oral Care</p>
+            <div id="mainImage">
+                <!-- <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Freepik - Flaticon</a> -->
+                <div id="imgPart-1">
+                    <img src="https://haanready.com/cdn/shop/files/ToothPaste_VibrantJourney_Family_Still_Life_1.jpg?v=1689859697" alt="">
+                </div>
+                <div id="imgPart-2">
+                    <h2>Skin Care</h2>
+                    <h3>The Ultimate path to radiant skin</h3>
+                </div>
+                <div id="imageDownText">
+                    <p>
+                        Lift Up your Journey: <span>Natural essentials for your daily adventures</span>
+                    </p>
+                </div>
+            </div>
+            <div id="mainProductContainer">
+                <div id="filter_Sorting">
+                    <div id="filterPart">Filter
+                        <div id="filterIcon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.8 3.2H3.348C3.6792 4.1288 4.5584 4.8 5.6 4.8C6.6416 4.8 7.5208 4.1288 7.852 3.2H15.2C15.6424 3.2 16 2.8424 16 2.4C16 1.9576 15.6424 1.6 15.2 1.6H7.852C7.5208 0.6712 6.6416 0 5.6 0C4.5584 0 3.6792 0.6712 3.348 1.6H0.8C0.3576 1.6 0 1.9576 0 2.4C0 2.8424 0.3576 3.2 0.8 3.2ZM15.2 12.8H7.852C7.5208 11.8712 6.6416 11.2 5.6 11.2C4.5584 11.2 3.6792 11.8712 3.348 12.8H0.8C0.3576 12.8 0 13.1576 0 13.6C0 14.0424 0.3576 14.4 0.8 14.4H3.348C3.6792 15.3288 4.5584 16 5.6 16C6.6416 16 7.5208 15.3288 7.852 14.4H15.2C15.6424 14.4 16 14.0424 16 13.6C16 13.1576 15.6424 12.8 15.2 12.8ZM15.2 7.2H12.652C12.3208 6.2712 11.4416 5.6 10.4 5.6C9.3584 5.6 8.4792 6.2712 8.148 7.2H0.8C0.3576 7.2 0 7.5576 0 8C0 8.4424 0.3576 8.8 0.8 8.8H8.148C8.4792 9.7288 9.3584 10.4 10.4 10.4C11.4416 10.4 12.3208 9.7288 12.652 8.8H15.2C15.6424 8.8 16 8.4424 16 8C16 7.5576 15.6424 7.2 15.2 7.2ZM5.6 1.6C6.0416 1.6 6.4 1.9584 6.4 2.4C6.4 2.8416 6.0416 3.2 5.6 3.2C5.1584 3.2 4.8 2.8416 4.8 2.4C4.8 1.9584 5.1584 1.6 5.6 1.6ZM5.6 14.4C5.1584 14.4 4.8 14.0416 4.8 13.6C4.8 13.1584 5.1584 12.8 5.6 12.8C6.0416 12.8 6.4 13.1584 6.4 13.6C6.4 14.0416 6.0416 14.4 5.6 14.4ZM10.4 8.8C9.9584 8.8 9.6 8.4416 9.6 8C9.6 7.5584 9.9584 7.2 10.4 7.2C10.8416 7.2 11.2 7.5584 11.2 8C11.2 8.4416 10.8416 8.8 10.4 8.8Z"
+                                    fill="#222222"></path>
+                                <mask id="mask0_8095:39389" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                    y="0" width="16" height="16">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.8 3.2H3.348C3.6792 4.1288 4.5584 4.8 5.6 4.8C6.6416 4.8 7.5208 4.1288 7.852 3.2H15.2C15.6424 3.2 16 2.8424 16 2.4C16 1.9576 15.6424 1.6 15.2 1.6H7.852C7.5208 0.6712 6.6416 0 5.6 0C4.5584 0 3.6792 0.6712 3.348 1.6H0.8C0.3576 1.6 0 1.9576 0 2.4C0 2.8424 0.3576 3.2 0.8 3.2ZM15.2 12.8H7.852C7.5208 11.8712 6.6416 11.2 5.6 11.2C4.5584 11.2 3.6792 11.8712 3.348 12.8H0.8C0.3576 12.8 0 13.1576 0 13.6C0 14.0424 0.3576 14.4 0.8 14.4H3.348C3.6792 15.3288 4.5584 16 5.6 16C6.6416 16 7.5208 15.3288 7.852 14.4H15.2C15.6424 14.4 16 14.0424 16 13.6C16 13.1576 15.6424 12.8 15.2 12.8ZM15.2 7.2H12.652C12.3208 6.2712 11.4416 5.6 10.4 5.6C9.3584 5.6 8.4792 6.2712 8.148 7.2H0.8C0.3576 7.2 0 7.5576 0 8C0 8.4424 0.3576 8.8 0.8 8.8H8.148C8.4792 9.7288 9.3584 10.4 10.4 10.4C11.4416 10.4 12.3208 9.7288 12.652 8.8H15.2C15.6424 8.8 16 8.4424 16 8C16 7.5576 15.6424 7.2 15.2 7.2ZM5.6 1.6C6.0416 1.6 6.4 1.9584 6.4 2.4C6.4 2.8416 6.0416 3.2 5.6 3.2C5.1584 3.2 4.8 2.8416 4.8 2.4C4.8 1.9584 5.1584 1.6 5.6 1.6ZM5.6 14.4C5.1584 14.4 4.8 14.0416 4.8 13.6C4.8 13.1584 5.1584 12.8 5.6 12.8C6.0416 12.8 6.4 13.1584 6.4 13.6C6.4 14.0416 6.0416 14.4 5.6 14.4ZM10.4 8.8C9.9584 8.8 9.6 8.4416 9.6 8C9.6 7.5584 9.9584 7.2 10.4 7.2C10.8416 7.2 11.2 7.5584 11.2 8C11.2 8.4416 10.8416 8.8 10.4 8.8Z"
+                                        fill="white"></path>
+                                </mask>
+                                <g mask="url(#mask0_8095:39389)"></g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="sortBy">Sort by
+                        <div>
+                            <i class="arrow down"></i>
+                        </div>
+                    </div>
+                <!-- <hr> -->
+                </div>
+                <div id="filterHumberger">
+                    <div>
+                        Category
+                        <div>
+                            <input type="radio">Face Cleanser (9)
+                        </div>
+                        <div>
+                            <input type="radio">Face Cream (9)
+                        </div>
+                        <div>
+                            <input type="radio">Face Serum (9)
+                        </div>
+                        <div>
+                            <input type="radio">Face SPF (1)
+                        </div>
+                        <div>
+                            <input type="radio">Skin Care (3)
+                        </div>
+                    </div>
+                    <div>Product
+                        <div>
+                            <input type="radio">Combo (12)
+                        </div>
+                    </div>
+                    <div>Size
+                        <div>
+                            <input type="radio"> Refil (9)
+                        </div>
+                    </div>
+                    <div>Fragrance
+                        <div>
+                            <input type="radio"> Forest Grace (10)
+                        </div>
+                        <div>
+                            <input type="radio"> Morning Glory (11)
+                        </div>
+                        <div>
+                            <input type="radio"> Tales Of Lotus (10)
+                        </div>
+                    </div>
+                    <div>Price
+                        <div>
+                            €10 - €47
+                        </div>
+                    </div>
+                </div>
+                <div id="sortHumberger">
+                    <div>
+                        Popularity
+                        <div>
+                            <input type="radio">Relevence
+                        </div>
+                        <div>
+                            <input type="radio">Bestselling
+                        </div>
+                    </div>
+                    <div>Price
+                        <div>
+                            <input type="radio">Price Descending
+                        </div>
+                        <div>
+                            <input type="radio">Price Ascending
+                        </div>
+                    </div>
+                    <div>Release Date
+                        <div>
+                            <input type="radio"> Created Ascending
+                        </div>
+                        <div>
+                            <input type="radio"> Created Descending
+                        </div>
+                    </div>
+                    <div>Fragrance
+                        <div>
+                            <input type="radio"> A - Z
+                        </div>
+                        <div>
+                            <input type="radio"> Z - A
+                        </div>
+                    </div>
+                </div>
+                <div id="products"></div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
+<script>
+    getData();
+    async function getData(){
+        try {
+            var res = await fetch("https://busy-erin-chimpanzee-gown.cyclic.app/oralCare")
+            var resData = await res.json();
+            showData(resData);
+        } catch (error) {
+            
+        }
+    }
+    async function showData(data) {
+        // for (var i = 0; i < 30; i++) {
+            data.map((item)=>{
+
+                
+                var div = document.createElement("div");
+                div.setAttribute("class", "card");
+
+            // var icon = document.createElement()
+
+
+            var image = document.createElement("img")
+            image.setAttribute("src", item.image);
+            image.setAttribute("id", "product_image");
+            
+            var image2 = document.createElement("img")
+            // image2.setAttribute("src", "shopping-bag.png");
+            image2.setAttribute("id", "shoping_bag");
+            
+            var p1 = document.createElement("p");
+            p1.textContent = item.title //"Full Skin Care Routine - for Normal to Combination Skin";
+            p1.setAttribute("class", "title_Euro")
+            
+            var p2 = document.createElement("p");
+            p2.textContent = item.price // "46,70 €"
+            p2.setAttribute("class", "title_Euro")
+            
+            div.append(image, p1, p2)
+            document.getElementById("products").append(div);
+        })       
+        }
+
+    const filterDiv = document.getElementById("filterPart");
+    const hiddenFilters = document.getElementById("filterHumberger");
+    filterDiv.addEventListener('click', function () {
+        this.classList.toggle('active');
+        hiddenFilters.classList.toggle('active');
+    });
+
+    const shortingDiv = document.getElementById("sortBy");
+    const hiddenShortings = document.getElementById("sortHumberger");
+    shortingDiv.addEventListener('click', function () {
+        this.classList.toggle('active');
+        hiddenShortings.classList.toggle('active');
+    });
+
+    document.getElementById("filterBtn").addEventListener("click", applyFilter);
+    var faceCleanser = document.getElementById("faceCleanser");
+    var faceCream = document.getElementById("faceCream");
+    var faceSerum = document.getElementById("faceSerum");
+    var faceSPF = document.getElementById("faceSPF");
+    var skinCare = document.getElementById("skinCare");
+    function applyFilter(){
+        if(faceCleanser.checked){
+            console.log("cleanser")
+        }
+        if(faceCream.checked){
+            console.log("cream")
+        }
+        if(faceSerum.checked){
+            console.log("serum")
+        }
+        if(faceSPF.checked){
+            console.log("spf")
+        }
+        if(skinCare.checked){
+            console.log("Skin Care")
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- // <img class="product-single__thumbnail-image" src="//haanready.com/cdn/shop/products/01_8.png?v=1675872879" alt="Load image into Gallery viewer, Full Skin Care Routine - for Normal to Combination Skin">
+            
+                        // <div class="ssw-faveiticon sswfaveicon7805543710969"><i data-product-id="7805543710969" data-count="10" class="ssw-icon-heart-o ssw-fave-icon ssw-wishlist-element ssw-synchronized" title="Add to wishlist" data-params="{&quot;product_id&quot;:&quot;7805543710969&quot;,&quot;event&quot;:&quot;fave_button&quot;,&quot;page&quot;:&quot;product_profile&quot;,&quot;title&quot;:&quot;Hyaluronic Face Serum - for Normal to Combination Skin&quot;,&quot;handle&quot;:&quot;hyaluronic-face-serum-for-normal-to-combination-skin&quot;,&quot;first_variant_id&quot;:43431078265081}" data-variant-id="43431078265081"></i><span class="faves-count" data-user-faves="{&quot;43431078265081&quot;:1}">10</span></div>
+            
+                        // var div2 = document.createElement("div");
+                        // div2.setAttribute("class", "cardImage");
+                        // var i = document.createElement("i");
+                        // i.setAttribute("data-product-id", "7805543710969");
+                        // i.setAttribute("data-count", "10");
+                        // i.setAttribute("class", "ssw-icon-heart-o ssw-fave-icon ssw-wishlist-element ssw-synchronized");
+                        // i.setAttribute("title", "Add to wishlist");
+                        // i.setAttribute("data-params", "{&quot;product_id&quot;:&quot;7805543710969&quot;,&quot;event&quot;:&quot;fave_button&quot;,&quot;page&quot;:&quot;product_profile&quot;,&quot;title&quot;:&quot;Hyaluronic Face Serum - for Normal to Combination Skin&quot;,&quot;handle&quot;:&quot;hyaluronic-face-serum-for-normal-to-combination-skin&quot;,&quot;first_variant_id&quot;:43431078265081}");
+                        // i.setAttribute("data-variant-id", "43431078265081");
+            
+                        // var span = document.createElement("span");
+                        // span.setAttribute("class", "faves-count")
+                        // span.setAttribute("data-user-faves", "{&quot;43431078265081&quot;:1}");
+                        // span.textContent = 10; -->
