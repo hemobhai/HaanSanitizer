@@ -1,3 +1,2 @@
 # HaanSanitizer
 
-*vikas chaturvedi
