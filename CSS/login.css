@@ -12,6 +12,8 @@
 #massage-signout {
     text-align: right;
     margin-bottom: 20px;
+    margin-right: 20px;
+ 
 }
 
 #message {
@@ -20,6 +22,15 @@
 
 #logout {
     display: none;
+    padding: 15px;
+    width: 130px;
+    margin-left: 15px;
+    color: aliceblue;
+    background-color: #000;
+    margin-top: -41px;
+    border: solid 1px #000000;
+    border-radius: 28.5px;
+    font-size: 18px;
 }
 
 
