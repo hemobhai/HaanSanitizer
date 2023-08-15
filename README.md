@@ -49,22 +49,13 @@ The Haan Sanitizer Clone Project aims to replicate the core functionality of the
 
 1. Fork the repository.
 
-2. Create a new branch for your feature:
+2. Create a new branch for your feature.
 
-```sh
-git checkout -b feature/new-feature
+3. Make your changes and commit.
 
-3. Make your changes and commit:
+4. Push your branch.
 
-```sh
-git commit -m "Add new feature"
-
-4. Push your branch:
-
-```sh
-git push origin feature/new-feature
-
-Create a pull request with a detailed description of your changes.
+5. Create a pull request with a detailed description of your changes.
 
 ## Contact
 **For questions, feedback, or collaboration, feel free to reach out to any of the team members:**
