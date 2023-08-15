@@ -1,6 +1,7 @@
 # Haan Sanitizer Clone Project
 
-https://haanready.com/cdn/shop/files/logo_han.png?v=1651046048
+![Project Logo](images/logo_han.webp)
+
 
 A clone of the Haan Sanitizer website that focuses on selling sanitizer refills and other body products. This project is part of our web development endeavor and is created by a team of enthusiastic developers: Himanshu, Amrit, Vivek, Roushan, and Vikas Chaturvedi.
 
@@ -23,7 +24,7 @@ The Haan Sanitizer Clone Project aims to replicate the core functionality of the
 - Amrit
 - Vivek
 - Roushan
-- Vikas Chaturvedi (You)
+- Vikas Chaturvedi
 
 ## Project Pages
 
