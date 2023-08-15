@@ -10,7 +10,6 @@ A clone of the Haan Sanitizer website that focuses on selling sanitizer refills 
 - [Team Members](#team-members)
 - [Project Pages](#project-pages)
 - [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
 - [Contribution Guidelines](#contribution-guidelines)
 - [Contact](#contact)
 
@@ -44,35 +43,7 @@ The Haan Sanitizer Clone Project aims to replicate the core functionality of the
 - Razorpay
 - Firebase
 
-## Getting Started
 
-1. Clone the repository:
-
-   ```sh
-   git clone [repository_url]
-
-2. Navigate to the project directory:
-
-```sh
-cd haan-sanitizer-clone
-
-3. Open the index.html file to access the homepage.
-
-4. To set up JSON Server for API simulation:
-
-5. Install JSON Server globally:
-
-```sh
-
-npm install -g json-server
-
-6. Start JSON Server with mock data:
-
-```sh
-
-json-server --watch db.json
-
-7. For Firebase authentication setup, refer to the documentation here.
 
 ## Contribution Guidelines
 
