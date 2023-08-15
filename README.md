@@ -50,3 +50,50 @@ The Haan Sanitizer Clone Project aims to replicate the core functionality of the
 
    ```sh
    git clone [repository_url]
+
+2. Navigate to the project directory:
+
+```sh
+
+cd haan-sanitizer-clone
+3. Open the index.html file to access the homepage.
+
+4. To set up JSON Server for API simulation:
+
+5. Install JSON Server globally:
+
+```sh
+
+npm install -g json-server
+6. Start JSON Server with mock data:
+
+```sh
+
+json-server --watch db.json
+7. For Firebase authentication setup, refer to the documentation here.
+
+## Contribution Guidelines
+1. Fork the repository.
+
+2. Create a new branch for your feature:
+
+```sh
+git checkout -b feature/new-feature
+3. Make your changes and commit:
+
+```sh
+git commit -m "Add new feature"
+4. Push your branch:
+
+```sh
+git push origin feature/new-feature
+Create a pull request with a detailed description of your changes.
+
+## Contact
+**For questions, feedback, or collaboration, feel free to reach out to any of the team members:**
+
+-Himanshu: GitHub Profile
+-Amrit: GitHub Profile
+-Vivek: GitHub Profile
+-Roushan: GitHub Profile
+-Vikas Chaturvedi: GitHub Profile
