@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 200px;
 
 }
 
@@ -103,9 +104,17 @@ color: #373636;
 }
 #logup{
     color: rgb(27, 33, 18);
+    
 }
 
 #sub{
     /* margin-top: 15px; */
 }
 /* Add more of your existing CSS styles here */
+#login:hover{
+    background-color:whitesmoke;
+    color: black;
+}
+#span{
+    font-size: 28px;
+}

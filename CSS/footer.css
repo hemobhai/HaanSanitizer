@@ -1,0 +1,79 @@
+/* footer css */
+
+
+.websites{
+    display: flex;
+    
+}
+.websites img{
+    width: 150px;
+    margin: auto;
+    margin-left: 6%;
+    margin-right: -3%;
+  
+}
+hr {
+    border: 1px solid black;
+}
+
+#info{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 9%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.bottom_section{
+    display: flex;
+}
+
+.bottom_section div {
+   margin-left: 8%;
+   margin-right: 40px;
+   margin-top: 30px;
+}
+.bottom_section div h2{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 20%;
+}
+
+.bottom_section div p{
+    margin-top: -3%;
+    font-size: large;
+    color: black;
+
+}
+.last_div{
+    
+    width: 400px;
+}
+#last_h2 {
+    margin-bottom: 10px;
+}
+
+#email_div input {
+    height: 40px;
+    font-size: large;
+    border: none;
+    margin-bottom: -8px;
+    margin-left: -35px;
+    
+}
+#email_div{
+    display: flex;
+    
+    
+}
+#email_div img{
+    width: 40px;
+    margin-left: 35%;
+    
+}
+#first_img{
+    margin-left: -35px;
+}
+#social_apps img{
+    width: 60px;
+    margin-top: -10px;
+}
