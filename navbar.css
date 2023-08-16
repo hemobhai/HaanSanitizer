@@ -3,6 +3,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 #main_nav {
     background-color: #fff;
     color: #333;
@@ -35,7 +40,11 @@ body {
     color: #66ccff;
 }
 #profile{
-    width: 40px;
+    width: 60px;
+    margin-left: -20px;
+    margin-right: -12px;
+    margin-top: -20px;
+    margin-bottom: -25px;
 }
 #cart {
     width: 40px;
@@ -43,7 +52,12 @@ body {
 
 
 #logo{
-    width: 40px;
+    width: 100px;
+   height: 80px;
+    margin-left: -20px;
+    margin-right: -12px;
+    margin-top: -20px;
+    margin-bottom: -25px;
 
 }
 #main_div{
@@ -68,8 +82,17 @@ body {
 
 #catalog_div {
     height: 500px;
+    width: 690px;
+
 
 }
+
+#catalog_div img {
+    height: 500px;
+    
+}
+
+
 #delivery_info {
     display: flex;
     flex-direction: row;
@@ -80,6 +103,7 @@ body {
     border-left: none;
     border-top: none;
     border-bottom: none;
+    margin-bottom: 5px;
 }
 
 #delivery_info div p {
@@ -124,6 +148,7 @@ body {
 
 .first_p {
     margin-left: 9.5%;
+    
 }
 
 #price1 div{
@@ -134,12 +159,11 @@ body {
    
 
 }
-#pack{
+.pack{
     width: 380px;
+    height: 350px;
 }
-#coco{
-    width: 380px;
-}
+
 
 #about_us {
     
@@ -150,9 +174,41 @@ body {
 }
 
 
+#about {
+    border: 1px solid black;
+    height: 450px;
+    margin-bottom: 50px;
+    border-right: none;
+    display: flex;
+}
 
+#aboutimgdiv {
+    border: 1px solid black;
+    width: 450px;
+    border-bottom: none;
+}
 
+#about div img {
+    width: 450px;
+    height: 400px;
+    margin-bottom: -5px;
+    
+}
+#aboutimgdiv div p {
+    text-align: center;
+    font-weight: bold;
+    
 
+}
+
+#aboutDetails {
+    border: 1px solid black;
+    width: 800px;
+}
+
+#aboutDetails a img{
+    width: 790px;
+}
 
 
 
