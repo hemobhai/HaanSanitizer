@@ -71,37 +71,127 @@
        
         width:40%;
         height:80vh;
-    
+        display: flex;
+        justify-content: center;
+      align-items: center;
     
     }
-    #portion h1{
+    /* #portion h1{
         margin: auto;
       width: 50%;
     padding-top: 250px;
       
-    }
-    #portion h3{
+    } */
+    /* #portion h3{
       margin-left: 150px;
-    }
+    } */
     #cart
     {
         border:1px solid gray;
         width:60%;
         height:80vh;
         display:flex;
-        display: flex;
-        justify-content: flex-end;
-      align-items: flex-end;
+       
     }
     
     #checkout
     {
-        background-color:#f08a74;
+        /* background-color:#f08a74; */
         
-        height:30px;
-        width:15%;
+        height:38px;
+        width:40%;
+        align-items: center;
+        padding: 10px 10px;
+            color: white;
+            background-color: #f08a74;
+            border: 0px;
+            font-weight: 700;
+            border-radius: 5px;
+            margin: 20px 0 10px 0;
+            width: 90%;
+            text-align: center;
+            cursor: pointer;
        
     }
     
     
+    #cart{
+
+        display:block;
+       
+        
+    }
     
+    .cart-body{
+    
+        display:flex;
+        border: 1px solid black;
+        gap:30px;
+    }
+    .card-img{
+    
+        border: 1px solid black;
+        height:200px;
+        width:200px;
+    }
+    .photo{
+    
+        height:200px;
+        width:200px;
+    }
+
+    /* left div */
+    #Qcart {
+        margin-left: 20px;
+        width: 30%;
+        /* border: 1px solid purple; */
+        padding: 20px;
+        margin-top: -70px;
+        }
+        button,#icount {
+            /* border: 1px solid red; */
+            padding: 10px 10px;
+            color: white;
+            /* background-color: teal; */
+            background-color:#f08a74;
+            border: 0px;
+            font-weight: 700;
+            border-radius: 5px;
+            margin: 20px 0 10px 0;
+            width: 90%;
+            text-align: center;
+            cursor: pointer;
+            }
+        button:hover{
+            /* background-color: #0d504d; */
+            color: white;
+           }
+           #pcode {
+           height: 25px;
+           padding: 10px 10px;
+           border-radius: 5px;
+           margin: 0px 0 10px 0;
+           width: 80%;
+           border: 1px solid rgb(206, 193, 193);
+           }
+           #cart-total{
+            height: 25px;
+           padding: 10px 10px;
+           border-radius: 5px;
+           margin: 0px 0 10px 0;
+           width: 80%;
+           border: 1px solid rgb(206, 193, 193);
+           }
+
+           label {
+            padding: 8px 8px;
+            color: white;
+            background-color:#f08a74;
+            border: 1px;
+            font-weight: 700;
+            border-radius: 5px;
+            margin: 20px auto 10px 0; /* Add spacing on top and bottom, and use auto for horizontal centering */
+            width: 85%;
+            text-align: center;
+            display: block; /* Set the display property to block for centering */
+          }
